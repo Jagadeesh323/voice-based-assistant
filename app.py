@@ -123,7 +123,7 @@ if st.query_params.get("auth") == "register":
 # -----------------------------------
 # Main UI
 # -----------------------------------
-st.markdown('<div class="title">🎙️ ORA</div>', unsafe_allow_html=True)
+st.markdown('<div class="title">ORA</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Voice Email & Messaging Assistant</div>', unsafe_allow_html=True)
 
 # -----------------------------------
