@@ -130,7 +130,7 @@ st.markdown('<div class="subtitle">Voice Email & Messaging Assistant</div>', uns
 # Login Page
 # -----------------------------------
 if st.session_state.page == "login" and not st.session_state.logged_in:
-    st.subheader("Welcome Back")
+    st.subheader("Welcome to ORA")
 
     email = st.text_input("Email")
     password = st.text_input("Password", type="password")
@@ -201,8 +201,8 @@ elif st.session_state.page == "register":
 elif st.session_state.page == "inbox":
     st.success(f"✅ Welcome {st.session_state.user}")
 
-    st.title("📥 Unified Inbox")
-    st.write("Your inbox UI comes here...")
+    st.title("Unified Inbox")
+    st.write("inbox UI comes here...")
 
     st.markdown("---")  # optional divider
 
