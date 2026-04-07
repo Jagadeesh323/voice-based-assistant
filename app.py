@@ -199,17 +199,19 @@ elif st.session_state.page == "register":
 # Unified Inbox
 # -----------------------------------
 elif st.session_state.page == "inbox":
-    top1, top2 = st.columns([5, 1])
-
-    with top1:
-        st.success(f"✅ Welcome {st.session_state.user}")
-
-    with top2:
-        if st.button("Logout"):
-            st.session_state.logged_in = False
-            st.session_state.page = "login"
-            st.session_state.user = None
-            st.rerun()
+    st.success(f"✅ Welcome {st.session_state.user}")
 
     st.title("📥 Unified Inbox")
     st.write("Your inbox UI comes here...")
+
+    st.markdown("---")  # optional divider
+
+    # ✅ Logout button at bottom
+    if st.button("Logout"):
+        st.session_state.logged_in = False
+        st.session_state.page = "login"
+        st.session_state.user = None
+        st.rerun()
+
+    
+    
